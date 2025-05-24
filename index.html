@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da forca</h1>
+        <span>Temas:</span>
+        <select name="" id="temas">
+            <option value="transporte">transporte</option>
+            <option value="comida">comida</option>
+            <option value="profissão">profissão</option>
+            <option value="país">país</option>
+            <option value="esporte">esporte</option>
+            <option value="instrumento">instrumento</option>
+            <option value="animal">animal</option>
+        </select>
+        <hr>
+    </header>
+    <main>
+        <button onclick="prepararJogo()">Jogar</button>
+
+        <div id="area">
+            <div id="forca">
+
+            </div>
+            <div id="placeholderPalavra">
+
+            </div>
+        </div>
+
+        <div id="teclado">
+            <button class="tecla" onclick="mandarLetra('q', this)">Q</button>
+            <button class="tecla" onclick="mandarLetra('w', this)">W</button>
+            <button class="tecla" onclick="mandarLetra('e', this)">E</button>
+            <button class="tecla" onclick="mandarLetra('r', this)">R</button>
+            <button class="tecla" onclick="mandarLetra('t', this)">T</button>
+            <button class="tecla" onclick="mandarLetra('y', this)">Y</button>
+            <button class="tecla" onclick="mandarLetra('u', this)">U</button>
+            <button class="tecla" onclick="mandarLetra('i', this)">I</button>
+            <button class="tecla" onclick="mandarLetra('o', this)">O</button>
+            <button class="tecla" onclick="mandarLetra('p', this)">P</button> <br>
+            <button class="tecla" onclick="mandarLetra('a', this)">A</button>
+            <button class="tecla" onclick="mandarLetra('s', this)">S</button>
+            <button class="tecla" onclick="mandarLetra('d', this)">D</button>
+            <button class="tecla" onclick="mandarLetra('f', this)">F</button>
+            <button class="tecla" onclick="mandarLetra('g', this)">G</button>
+            <button class="tecla" onclick="mandarLetra('h', this)">H</button>
+            <button class="tecla" onclick="mandarLetra('j', this)">J</button>
+            <button class="tecla" onclick="mandarLetra('k', this)">K</button>
+            <button class="tecla" onclick="mandarLetra('l', this)">L</button> <br>
+            <button class="tecla" onclick="mandarLetra('z', this)">Z</button>
+            <button class="tecla" onclick="mandarLetra('x', this)">X</button>
+            <button class="tecla" onclick="mandarLetra('c', this)">C</button>
+            <button class="tecla" onclick="mandarLetra('v', this)">V</button>
+            <button class="tecla" onclick="mandarLetra('b', this)">B</button>
+            <button class="tecla" onclick="mandarLetra('n', this)">N</button>
+            <button class="tecla" onclick="mandarLetra('m', this)">M</button>
+        </div>
+
+    </main>
+    <footer>
+        <section>
+            <p>Github dos desenvolvedores</p>
+            <div id="desenvolvedores">
+                <a target="_blank" href="https://github.com/FelipeGSG">FelipeGSG</a>
+            </div>
+            <div id="desenvolvedores">
+                <a target="_blank" href="https://github.com/GuilhSchneider">GuilhSchneider</a>
+            </div>
+        </section>
+        <section>
+            <p>Projeto educacional <br> SENAI Nami Jafet</p>
+        </section>
+        <section>
+            <p>Contribua para o projeto no seguinte repositório!</p>
+            <a href="https://github.com/Felipe-Gabriel-Souza-Goncalves/api_jogo-da-forca">API Jogo da forca</a>
+        </section>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
